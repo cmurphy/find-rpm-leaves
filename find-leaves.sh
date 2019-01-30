@@ -2,7 +2,7 @@
 
 set -ux
 
-OUT_OF_THE_WAY=${JAIL:~/jail}
+OUT_OF_THE_WAY=${JAIL:-~/jail}
 mkdir -p $OUT_OF_THE_WAY
 
 LEAVES=${LEAVES:-~/leaves.txt}
