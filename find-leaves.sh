@@ -7,9 +7,9 @@ mkdir -p $OUT_OF_THE_WAY
 
 LEAVES=${LEAVES:-~/leaves.txt}
 
-NFS_ROOT=${NFS_ROOT:-/srv/www/suse-12.3/x86_64/repos}
+NFS_ROOT=${NFS_ROOT:-/srv/tftpboot/suse-12.4/x86_64/repos}
 PRIMARY_XML="repodata/*-primary.xml.gz"
-DEPENDENCIES="${NFS_ROOT}/SLES12-SP3-Pool/${PRIMARY_XML} ${NFS_ROOT}/SLES12-SP3-Updates/${PRIMARY_XML}"
+DEPENDENCIES="${NFS_ROOT}/SLES12-SP4-Pool/${PRIMARY_XML} ${NFS_ROOT}/SLES12-SP4-Updates/${PRIMARY_XML}"
 
 # sanity check
 test -f repodata/repomd.xml || { echo "Must be run either from the root of an rpm-md repo or from the suse/ directory" ; exit 1 ; }
